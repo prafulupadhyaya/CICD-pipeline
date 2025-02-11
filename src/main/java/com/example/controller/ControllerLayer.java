@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ControllerLayer {
     @GetMapping("/hello")
-    public String greet(){
+    public String greeta(){
         return "Hi From CICD Pipeline";
     }
 }
