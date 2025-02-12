@@ -29,5 +29,9 @@ jobs:
         cache: maven
     - name: Build with Maven new
       run: mvn clean install
-
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact # You can name it whatever you prefer
+        path: target/*.jar 
   
